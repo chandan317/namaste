@@ -1,3 +1,3 @@
  Namste react 🚀😍
 
- Episode - 01 🙌😄
+ Episode - 01 🙌😄😎
