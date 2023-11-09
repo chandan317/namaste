@@ -1,0 +1,14 @@
+{
+  "name": "namaste",
+  "version": "1.0.0",
+  "description": "this is namaste react by chandan tm",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Chandan T M",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.2"
+  }
+}
