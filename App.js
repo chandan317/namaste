@@ -38,19 +38,37 @@
 // --------------------------------------------------
 
 // creating nested React element
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// const parent = React.createElement("div", { id: "parent" }, [
+//   React.createElement("div", { id: "child" }, [
+//     React.createElement("h1", {}, "This is namaste react🚀"),
+//     React.createElement("h2", {}, "I'm an h2 tag"),
+//   ]),
+//   React.createElement("div", { id: "child2" }, [
+//     React.createElement("h1", {}, "I'm an h1 tag"),
+//     React.createElement("h2", {}, "I'm an h2 tag"),
+//   ]),
+// ]);
+// // create react using createRoot
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// // passing react element inside Root;
+
+// root.render(parent);
 import React from "react";
-import ReactDOM from "react-dom/client";
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is namaste react🚀"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I'm an h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-]);
-// create react using createRoot
+import ReactDOM from "react-dom";
+
+// core react
+const heading = React.createElement("h1", { id: "hello" }, "namaste react 🚀");
+
+console.log(heading);
+// root.render(heading);
+
+// jsx --  html like syntax
+
+// jsx(transpiled before it reaches the js) - parcel - babel
+
+const jsxHeading = <h1 id="helll"> Namaste react using JSX 🚀 </h1>;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// passing react element inside Root;
-root.render(parent);
+root.render(jsxHeading);
