@@ -69,6 +69,7 @@ console.log(heading);
 // jsx(transpiled before it reaches the js) - parcel - babel
 
 const jsxHeading = <h1 id="helll"> Namaste react using JSX 🚀 </h1>;
+console.log(jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(jsxHeading);
