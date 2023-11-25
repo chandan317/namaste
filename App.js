@@ -56,20 +56,26 @@
 
 // root.render(parent);
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 // core react
 const heading = React.createElement("h1", { id: "hello" }, "namaste react 🚀");
 
-console.log(heading);
+// console.log(heading);
 // root.render(heading);
 
 // jsx --  html like syntax
 
 // jsx(transpiled before it reaches the js) - parcel - babel
 
-const jsxHeading = <h1 id="helll"> Namaste react using JSX 🚀 </h1>;
-console.log(jsxHeading);
+// const jsxHeading = <h1 id="helll"> Namaste react using JSX 🚀 </h1>;
+// console.log(jsxHeading);
 
+const jsx = (
+  <h2 className="ro" tabIndex="2">
+    namaste react jsx
+  </h2>
+);
+console.log(jsx);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(jsx);
