@@ -50,9 +50,9 @@
 //     React.createElement("h2", {}, "I'm an h2 tag"),
 //   ]),
 // ]);
-// // create react using createRoot
+// create react using createRoot
 // const root = ReactDOM.createRoot(document.getElementById("root"));
-// // passing react element inside Root;
+// passing react element inside Root;
 
 // root.render(parent);
 import React from "react";
@@ -86,7 +86,7 @@ const jsx = (
 
 const HeadingComponent = () => {
   return (
-    <div>
+    <div id="container">
       <h1>Namaste react functional components</h1>
       <h2>fun compononents is a js function which return some jsx code </h2>
       <h2> namaste component should be start with capital</h2>
@@ -105,5 +105,47 @@ const SearchBar = () => {
   );
 };
 
+// Arrow fn
+
+const fn1 = () => {
+  return true;
+};
+const fn2 = () => true;
+
+// both above are same but use fn1
+// Arrow Function using return
+
+const FooterComponent = () => {
+  return <h1>hii footer </h1>;
+};
+// Function component without using return
+const Footer = () => (
+  <h1 className="foot" tabIndex="2">
+    Hii simple footer
+  </h1>
+);
+
+// const titl = <h1>my title</h1>;
+
+// const Titl = () => <h1 className="head">my title e</h1>;
+
+// function single line
+// const CardComponent = () => <h1 className="card">hii Cards</h1>;
+
+// ===============================================
+
+const Title = () => (
+  <h1 className="head" tabIndex="2">
+    Namaster react using jsx
+  </h1>
+);
+// component composition == component inside component
+
+const HdComponent = () => (
+  <div>
+    <Title />
+    <h1 className="hi">Namaste react fnal component</h1>
+  </div>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<SearchBar />);
+root.render(<HdComponent />);
