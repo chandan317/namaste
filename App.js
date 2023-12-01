@@ -147,5 +147,20 @@ const HdComponent = () => (
     <h1 className="hi">Namaste react fnal component</h1>
   </div>
 );
+// ===============================
+// element inside element
+const number = 1000;
+const foot = (
+  <h1 className="name" tabIndex="1">
+    {100 + 200} namaste react jsx {number}
+  </h1>
+);
+
+const FootComponent = () => (
+  <h1 className="nam" tabIndex={3}>
+    {foot}
+    namaste functional component
+  </h1>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HdComponent />);
+root.render(<FootComponent />);
